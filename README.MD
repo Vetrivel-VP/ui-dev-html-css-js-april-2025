@@ -2,6 +2,8 @@
 
 A simple UI development project using **HTML**, **CSS**, **Javascript**, and **TailwindCSS (CLI)**.
 
+🌐 Live URL : [Click Me](https://ui-dev-april-project.netlify.app/)
+
 ## 🌐 Tech Stack
 
 - **HTML**
