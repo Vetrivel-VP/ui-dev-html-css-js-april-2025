@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UI Development</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
+  <body class="container mx-auto">
+    <!-- navigational bar -->
+    <header
+      class="container mx-auto z-50 backdrop-blur-sm flex items-center justify-between gap-4 fixed top-0 p-4 md:p-8"
+    >
+      <div class="flex items-center justify-center gap-2">
+        <img
+          src="./assets/img/logo.svg"
+          alt=""
+          class="w-10 h-10 object-contain rounded-lg"
+        />
+        <p class="text-xl font-bold text-gray-50">Just Blog</p>
+      </div>
+
+      <nav class="hidden md:block">
+        <ul class="flex items-center justify-center gap-4">
+          <li>
+            <a
+              href="#"
+              class="text-base font-semibold text-gray-200 hover:text-gray-50"
+              >Solution</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-base font-semibold text-gray-200 hover:text-gray-50"
+              >Product</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-base font-semibold text-gray-200 hover:text-gray-50"
+              >Review</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-base font-semibold text-gray-200 hover:text-gray-50"
+              >Resources</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-base font-semibold text-gray-200 hover:text-gray-50"
+              >About Us</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <button
+        type="button"
+        class="flex items-center justify-center gap-2 px-4 py-2 bg-white rounded-full shadow-md hover:bg-gray-100 cursor-pointer"
+      >
+        <div class="w-2 h-2 rounded-full bg-red-500"></div>
+        Get Started
+      </button>
+
+      <div id="toggleMenu" class="md:hidden">
+        <i class="bx bx-menu-alt-right text-3xl text-gray-50"></i>
+      </div>
+    </header>
+    <!-- hero section -->
+
+    <section
+      id="home"
+      class="w-full home-gradient pt-20 container grid grid-cols-1 md:grid-cols-2 gap-4"
+    >
+      <div
+        class="py-12 flex items-start justify-start flex-col gap-12 px-4 md:px-8"
+      >
+        <h2 class="text-6xl text-gray-200 tracking-wider">
+          Stay Informed with the
+          <span class="font-semibold">Latest Updates</span>
+          <span class="font-serif italic">and Blog Highlight</span>
+        </h2>
+
+        <p class="text-gray-900 text-lg mt-4">
+          Discover the latest trends and insights in the world of technology and
+          innovation. Stay ahead of the curve with our curated content.
+        </p>
+
+        <div class="flex items-center justify-center gap-4">
+          <button
+            type="button"
+            class="flex items-center justify-center gap-2 px-4 py-2 bg-gray-200 rounded-full shadow-md hover:bg-gray-100 cursor-pointer"
+          >
+            Download <span class="text-red-900">Jblogs</span>
+
+            <i class="bx bxs-download"></i>
+          </button>
+
+          <button type="button" class="text-gray-800 hover:text-gray-100">
+            Try Demo
+          </button>
+        </div>
+
+        <div class="mt-6">
+          <div class="flex items-center justify-start gap-4 text-gray-900">
+            <i class="bx bx-check-circle"></i>
+            <p>eliminte repetitive tasks with Jula</p>
+          </div>
+
+          <div class="flex items-center justify-start gap-4 text-gray-900">
+            <i class="bx bx-check-circle"></i>
+            <p>productive and enthusuastuc team member</p>
+          </div>
+
+          <div class="flex items-center justify-start gap-4 text-gray-900">
+            <i class="bx bx-check-circle"></i>
+            <p>Streamline lead tracking</p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="w-full h-full flex flex-col items-center justify-center gap-6 p-2"
+      >
+        <div class="md:w-3/4 h-[400px] rounded-lg bg-white/50 p-2 relative">
+          <img
+            src="https://cdn.pixabay.com/photo/2016/11/19/17/25/furniture-1840463_1280.jpg"
+            alt=""
+            class="w-full h-full object-cover"
+          />
+
+          <div
+            class="absolute bottom-8 left-16 w-3/4 h-3/4 border-6 border-white/50 rounded-lg"
+          ></div>
+        </div>
+
+        <div
+          class="md:w-1/2 p-4 rounded-lg bg-white flex items-center justify-between gap-2 shadow-md -mt-16 z-50"
+        >
+          <div class="flex items-start justify-start gap-2 flex-col">
+            <div class="flex items-center justify-start gap-2 w-full">
+              <img
+                src="https://cdn.pixabay.com/photo/2016/05/28/07/05/book-1421097_1280.jpg"
+                alt=""
+                class="w-8 h-8 rounded-full object-cover"
+              />
+              <h2>Vetrivel Ravi.. <span class="text-sm">following</span></h2>
+            </div>
+
+            <p class="text-xs">
+              Lorem ipsum dolor sit, amet consect adipisicing elit.
+            </p>
+          </div>
+
+          <img
+            src="https://cdn.pixabay.com/photo/2016/05/28/07/05/book-1421097_1280.jpg"
+            alt=""
+            class="w-16 h-16 rounded-lg object-cover"
+          />
+        </div>
+
+        <div
+          class="md:w-1/2 scale-75 -mt-8 p-4 rounded-lg bg-white flex items-center justify-between gap-2 shadow-md"
+        >
+          <div class="flex items-start justify-start gap-2 flex-col">
+            <div class="flex items-center justify-start gap-2 w-full">
+              <img
+                src="https://cdn.pixabay.com/photo/2016/05/28/07/05/book-1421097_1280.jpg"
+                alt=""
+                class="w-8 h-8 rounded-full object-cover"
+              />
+              <h2>Vetrivel Ravi.. <span class="text-sm">following</span></h2>
+            </div>
+
+            <p class="text-xs">
+              Lorem ipsum dolor sit, amet consect adipisicing elit.
+            </p>
+          </div>
+
+          <img
+            src="https://cdn.pixabay.com/photo/2016/05/28/07/05/book-1421097_1280.jpg"
+            alt=""
+            class="w-16 h-16 rounded-lg object-cover"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- company section -->
+    <section class="py-12">
+      <div class="text-center mb-8">
+        <p class="text-lg text-gray-600">
+          Join 4,000+ companies already growing with us
+        </p>
+      </div>
+
+      <div class="flex items-center justify-center flex-wrap gap-12 px-4">
+        <img
+          class="h-10 w-auto grayscale opacity-80 hover:opacity-100"
+          src="./assets/img/coinbase.png"
+          alt=""
+        />
+
+        <img
+          class="h-10 w-auto grayscale opacity-80 hover:opacity-100"
+          src="./assets/img/spotify.png"
+          alt=""
+        />
+
+        <img
+          class="h-10 w-auto grayscale opacity-80 hover:opacity-100"
+          src="./assets/img/slack.png"
+          alt=""
+        />
+
+        <img
+          class="h-10 w-auto grayscale opacity-80 hover:opacity-100"
+          src="./assets/img/webflow.png"
+          alt=""
+        />
+
+        <img
+          class="h-10 w-auto grayscale opacity-80 hover:opacity-100"
+          src="./assets/img/zoom.png"
+          alt=""
+        />
+
+        <img
+          class="h-10 w-auto grayscale opacity-80 hover:opacity-100"
+          src="./assets/img/dropbox.png"
+          alt=""
+        />
+
+        <img
+          class="h-10 w-auto grayscale opacity-80 hover:opacity-100"
+          src="./assets/img/slack.png"
+          alt=""
+        />
+      </div>
+    </section>
+
+    <!-- our value section -->
+
+    <section class="py-12 grid grid-cols-1 md:grid-cols-2 gap-24 px-12">
+      <div class="flex flex-col items-start justify-start gap-4">
+        <div
+          class="border border-orange-400 bg-orange-500/20 rounded-md px-3 py-1"
+        >
+          Our Value
+        </div>
+
+        <h2 class="text-4xl font-semibold">
+          Creative Blogging Tools for enhanced productivity
+        </h2>
+
+        <p class="text-base text-gray-700">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+          animi sed suscipit nulla? Magni aperiam error dolores incidunt
+          possimus ipsum dolorum cupiditate? Nostrum exercitationem repellat
+          nobis nihil est numquam autem.
+        </p>
+
+        <button
+          type="button"
+          class="w-44 p-2 rounded-full border border-gray-400 flex items-center justify-between"
+        >
+          Learn More
+
+          <div
+            class="w-8 h-8 rounded-full bg-red-900 flex items-center justify-center"
+          >
+            <i class="bx bx-right-arrow-alt text-gray-50"></i>
+          </div>
+        </button>
+
+        <div class="mt-auto flex items-center justify-center gap-12">
+          <p class="text-4xl">
+            400K+ <span class="text-base block">User Active</span>
+          </p>
+
+          <div class="w-[2px] h-10 bg-gray-200"></div>
+
+          <p class="text-4xl">
+            10.4K+ <span class="text-base block">Creater in world</span>
+          </p>
+
+          <div class="w-[2px] h-10 bg-gray-200"></div>
+
+          <p class="text-4xl">
+            4.9 <span class="text-base block">Average Ratings</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="flex flex-col items-start justify-start gap-4">
+        <div
+          class="bg-white border border-gray-200 p-4 w-full rounded-lg flex items-start gap-2"
+        >
+          <div
+            class="w-10 h-10 min-w-10 min-h-10 rounded-md bg-red-900 -ml-8 flex items-center justify-center"
+          >
+            <i class="bx bxs-bulb text-gray-50"></i>
+          </div>
+
+          <div>
+            <h2 class="text-xl font-semibold text-gray-800">
+              Lorem ipsum dolor sit amet
+            </h2>
+            <p class="text-base text-gray-500">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse
+              placeat ratione tenetur quasi repellat facilis pariatur, enim
+              molestiae! Quae velit atque saepe
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="bg-white border border-gray-200 p-4 w-full rounded-lg flex items-start gap-2"
+        >
+          <div
+            class="w-10 h-10 min-w-10 min-h-10 rounded-md bg-red-900 -ml-8 flex items-center justify-center"
+          >
+            <i class="bx bxs-bulb text-gray-50"></i>
+          </div>
+
+          <div>
+            <h2 class="text-xl font-semibold text-gray-800">
+              Lorem ipsum dolor sit amet
+            </h2>
+            <p class="text-base text-gray-500">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse
+              placeat ratione tenetur quasi repellat facilis pariatur, enim
+              molestiae! Quae velit atque saepe
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="bg-white border border-gray-200 p-4 w-full rounded-lg flex items-start gap-2"
+        >
+          <div
+            class="w-10 h-10 min-w-10 min-h-10 rounded-md bg-red-900 -ml-8 flex items-center justify-center"
+          >
+            <i class="bx bxs-bulb text-gray-50"></i>
+          </div>
+
+          <div>
+            <h2 class="text-xl font-semibold text-gray-800">
+              Lorem ipsum dolor sit amet
+            </h2>
+            <p class="text-base text-gray-500">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse
+              placeat ratione tenetur quasi repellat facilis pariatur, enim
+              molestiae! Quae velit atque saepe
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="bg-white border border-gray-200 p-4 w-full rounded-lg flex items-start gap-2"
+        >
+          <div
+            class="w-10 h-10 min-w-10 min-h-10 rounded-md bg-red-900 -ml-8 flex items-center justify-center"
+          >
+            <i class="bx bxs-bulb text-gray-50"></i>
+          </div>
+
+          <div>
+            <h2 class="text-xl font-semibold text-gray-800">
+              Lorem ipsum dolor sit amet
+            </h2>
+            <p class="text-base text-gray-500">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse
+              placeat ratione tenetur quasi repellat facilis pariatur, enim
+              molestiae! Quae velit atque saepe
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- features sections -->
+
+    <section
+      class="py-12 flex items-center justify-center flex-col gap-12 bg-gray-50"
+    >
+      <div class="flex flex-col items-center justify-center gap-4">
+        <div
+          class="border border-orange-400 bg-orange-500/20 rounded-md px-3 py-1"
+        >
+          Our Feature
+        </div>
+
+        <h2 class="text-3xl font-semibold">Explore key features of our app</h2>
+        <p class="md:w-3/4 text-center">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum esse
+          eos quos blanditiis aperiam dolorem corporis facere provident, sint
+          sit natus suscipit voluptate qui amet alias ipsam impedit. Tenetur,
+          ad.
+        </p>
+      </div>
+
+      <div class="w-full md:w-3/4 grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div
+          class="w-full rounded-lg bg-white p-4 flex flex-col items-center justify-center gap-4"
+        >
+          <img
+            src="./assets/img/hero1.jpg"
+            alt=""
+            class="w-full h-full object-contain rounded-lg"
+          />
+
+          <div class="h-[1px] w-full bg-gray-200 my-2"></div>
+
+          <div class="w-full flex flex-col items-start gap-2">
+            <h2 class="text-xl font-semibold">Audio On-The-Go</h2>
+            <p class="text-base text-gray-500">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et
+              consequatur
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="w-full rounded-lg bg-white p-4 flex flex-col items-center justify-center gap-4"
+        >
+          <img
+            src="./assets/img/hero2.jpg"
+            alt=""
+            class="w-full h-full object-contain rounded-lg"
+          />
+
+          <div class="h-[1px] w-full bg-gray-200 my-2"></div>
+
+          <div class="w-full flex flex-col items-start gap-2">
+            <h2 class="text-xl font-semibold">Audio On-The-Go</h2>
+            <p class="text-base text-gray-500">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et
+              consequatur
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="w-full rounded-lg bg-white p-4 flex flex-col items-center justify-center gap-4"
+        >
+          <img
+            src="./assets/img/her03.jpg"
+            alt=""
+            class="w-full h-full object-contain rounded-lg"
+          />
+
+          <div class="h-[1px] w-full bg-gray-200 my-2"></div>
+
+          <div class="w-full flex flex-col items-start gap-2">
+            <h2 class="text-xl font-semibold">Audio On-The-Go</h2>
+            <p class="text-base text-gray-500">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et
+              consequatur
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="w-full rounded-lg bg-white p-4 flex flex-col items-center justify-center gap-4"
+        >
+          <img
+            src="./assets/img/hero4.jpg"
+            alt=""
+            class="w-full h-full object-contain rounded-lg"
+          />
+
+          <div class="h-[1px] w-full bg-gray-200 my-2"></div>
+
+          <div class="w-full flex flex-col items-start gap-2">
+            <h2 class="text-xl font-semibold">Audio On-The-Go</h2>
+            <p class="text-base text-gray-500">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et
+              consequatur
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- feature second section -->
+
+    <section class="py-12 grid grid-cols-1 md:grid-cols-2 gap-4 px-8">
+      <div class="flex flex-col items-start justify-start gap-4">
+        <div
+          class="border border-orange-400 bg-orange-500/20 rounded-md px-3 py-1"
+        >
+          Feature
+        </div>
+
+        <h2 class="text-3xl font-semibold">
+          Simple and efficient blog organization
+        </h2>
+
+        <p class="text-gray-500">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+          recusandae vitae obcaecati, iste, sunt reiciendis aliquid fugit
+          molestias repudiandae minus cum aspernatur dolorum tenetur! Ea
+          necessitatibus aut id corrupti illo.
+        </p>
+
+        <button
+          type="button"
+          class="w-44 p-2 rounded-full border border-gray-400 flex items-center justify-between mt-auto"
+        >
+          Learn More
+
+          <div
+            class="w-8 h-8 rounded-full bg-red-900 flex items-center justify-center"
+          >
+            <i class="bx bx-right-arrow-alt text-gray-50"></i>
+          </div>
+        </button>
+      </div>
+      <img
+        src="./assets/img/features.jpg"
+        class="w-full md:w-3/4 h-full object-cover rounded-lg"
+        alt=""
+      />
+    </section>
+
+    <section class="py-12 flex flex-col items-center justify-center gap-4 px-8">
+      <div
+        class="border border-orange-400 bg-orange-500/20 rounded-md px-3 py-1"
+      >
+        FAQ
+      </div>
+
+      <h2 class="text-3xl font-semibold">(FAQ) Questions And Ansers</h2>
+
+      <p class="text-gray-500 w-full md:w-3/4 text-center">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+        recusandae vitae obcaecati, iste, sunt reiciendis aliquid fugit
+        molestias repudiandae minus cum aspernatur dolorum tenetur! Ea
+        necessitatibus aut id corrupti illo.
+      </p>
+
+      <div class="space-y-4 w-full my-8">
+        <!-- FAQ item -->
+        <div
+          class="border rounded-lg overflow-hidden border-gray-200 p-2 w-full"
+        >
+          <button
+            type="button"
+            onclick="toggleAction(this)"
+            class="w-full text-left px-6 py-4 flex justify-between items-center bg-white hover:bg-gray-100 cursor-pointer"
+          >
+            <span>How to download the App?</span>
+            <i
+              class="bx bx-chevron-down text-2xl text-gray-500 accordion-icon transition-transform duration-300"
+            ></i>
+          </button>
+
+          <div class="accordion-content px-6 py-4 text-gray-600 hidden">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quod
+            veniam repellendus, nam, molestiae mollitia facilis sit, totam culpa
+            voluptates provident debitis perspiciatis alias deserunt ducimus qui
+            impedit temporibus odio!
+          </div>
+        </div>
+
+        <div
+          class="border rounded-lg overflow-hidden border-gray-200 p-2 w-full"
+        >
+          <button
+            type="button"
+            onclick="toggleAction(this)"
+            class="w-full text-left px-6 py-4 flex justify-between items-center bg-white hover:bg-gray-100 cursor-pointer"
+          >
+            <span>How to download the App?</span>
+            <i
+              class="bx bx-chevron-down text-2xl text-gray-500 accordion-icon transition-transform duration-300"
+            ></i>
+          </button>
+
+          <div class="accordion-content px-6 py-4 text-gray-600 hidden">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quod
+            veniam repellendus, nam, molestiae mollitia facilis sit, totam culpa
+            voluptates provident debitis perspiciatis alias deserunt ducimus qui
+            impedit temporibus odio!
+          </div>
+        </div>
+
+        <div
+          class="border rounded-lg overflow-hidden border-gray-200 p-2 w-full"
+        >
+          <button
+            type="button"
+            onclick="toggleAction(this)"
+            class="w-full text-left px-6 py-4 flex justify-between items-center bg-white hover:bg-gray-100 cursor-pointer"
+          >
+            <span>How to download the App?</span>
+            <i
+              class="bx bx-chevron-down text-2xl text-gray-500 accordion-icon transition-transform duration-300"
+            ></i>
+          </button>
+
+          <div class="accordion-content px-6 py-4 text-gray-600 hidden">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quod
+            veniam repellendus, nam, molestiae mollitia facilis sit, totam culpa
+            voluptates provident debitis perspiciatis alias deserunt ducimus qui
+            impedit temporibus odio!
+          </div>
+        </div>
+
+        <div
+          class="border rounded-lg overflow-hidden border-gray-200 p-2 w-full"
+        >
+          <button
+            type="button"
+            onclick="toggleAction(this)"
+            class="w-full text-left px-6 py-4 flex justify-between items-center bg-white hover:bg-gray-100 cursor-pointer"
+          >
+            <span>How to download the App?</span>
+            <i
+              class="bx bx-chevron-down text-2xl text-gray-500 accordion-icon transition-transform duration-300"
+            ></i>
+          </button>
+
+          <div class="accordion-content px-6 py-4 text-gray-600 hidden">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quod
+            veniam repellendus, nam, molestiae mollitia facilis sit, totam culpa
+            voluptates provident debitis perspiciatis alias deserunt ducimus qui
+            impedit temporibus odio!
+          </div>
+        </div>
+
+        <div
+          class="border rounded-lg overflow-hidden border-gray-200 p-2 w-full"
+        >
+          <button
+            type="button"
+            onclick="toggleAction(this)"
+            class="w-full text-left px-6 py-4 flex justify-between items-center bg-white hover:bg-gray-100 cursor-pointer"
+          >
+            <span>How to download the App?</span>
+            <i
+              class="bx bx-chevron-down text-2xl text-gray-500 accordion-icon transition-transform duration-300"
+            ></i>
+          </button>
+
+          <div class="accordion-content px-6 py-4 text-gray-600 hidden">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quod
+            veniam repellendus, nam, molestiae mollitia facilis sit, totam culpa
+            voluptates provident debitis perspiciatis alias deserunt ducimus qui
+            impedit temporibus odio!
+          </div>
+        </div>
+
+        <div
+          class="border rounded-lg overflow-hidden border-gray-200 p-2 w-full"
+        >
+          <button
+            type="button"
+            onclick="toggleAction(this)"
+            class="w-full text-left px-6 py-4 flex justify-between items-center bg-white hover:bg-gray-100 cursor-pointer"
+          >
+            <span>How to download the App?</span>
+            <i
+              class="bx bx-chevron-down text-2xl text-gray-500 accordion-icon transition-transform duration-300"
+            ></i>
+          </button>
+
+          <div class="accordion-content px-6 py-4 text-gray-600 hidden">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quod
+            veniam repellendus, nam, molestiae mollitia facilis sit, totam culpa
+            voluptates provident debitis perspiciatis alias deserunt ducimus qui
+            impedit temporibus odio!
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-12 grid grid-cols-1 md:grid-cols-2 gap-24 px-12">
+      <div class="flex flex-col items-start justify-start gap-4">
+        <div
+          class="border border-orange-400 bg-orange-500/20 rounded-md px-3 py-1"
+        >
+          Testimonials
+        </div>
+
+        <h2 class="text-4xl font-semibold">
+          User Experience that speaks volume
+        </h2>
+
+        <p class="text-base text-gray-700">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+          animi sed suscipit nulla? Magni aperiam error dolores incidunt
+          possimus ipsum dolorum cupiditate? Nostrum exercitationem repellat
+          nobis nihil est numquam autem.
+        </p>
+
+        <div class="mt-auto flex items-center justify-center gap-4">
+          <div
+            class="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center"
+          >
+            <i class="bx bx-chevron-up text-gray-500"></i>
+          </div>
+
+          <div
+            class="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center"
+          >
+            <i class="bx bx-chevron-down text-gray-500"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col items-start justify-start gap-4">
+        <div
+          class="bg-white border border-gray-200 p-4 w-full rounded-lg flex items-start gap-2"
+        >
+          <div
+            class="w-10 h-10 min-w-10 min-h-10 rounded-md bg-red-900 flex items-center justify-center"
+          >
+            <i class="bx bxs-bulb text-gray-50"></i>
+          </div>
+
+          <div>
+            <h2 class="text-xl font-semibold text-gray-800">
+              Lorem ipsum dolor sit amet
+            </h2>
+            <p class="text-base text-gray-500">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse
+              placeat ratione tenetur quasi repellat facilis pariatur, enim
+              molestiae! Quae velit atque saepe
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="bg-white border border-gray-200 p-4 w-full rounded-lg flex items-start gap-2"
+        >
+          <div
+            class="w-10 h-10 min-w-10 min-h-10 rounded-md bg-red-900 flex items-center justify-center"
+          >
+            <i class="bx bxs-bulb text-gray-50"></i>
+          </div>
+
+          <div>
+            <h2 class="text-xl font-semibold text-gray-800">
+              Lorem ipsum dolor sit amet
+            </h2>
+            <p class="text-base text-gray-500">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse
+              placeat ratione tenetur quasi repellat facilis pariatur, enim
+              molestiae! Quae velit atque saepe
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="w-full p-4">
+      <div class="w-full bg-black rounded-lg p-3">
+        <div
+          class="w-full bg-white rounded-lg p-4 flex items-center justify-center gap-6 flex-col"
+        >
+          <div
+            class="w-12 h-12 rounded-md flex items-center justify-center border border-gray-200"
+          >
+            <i class="bx bxs-bulb text-orange-500 text-3xl"></i>
+          </div>
+
+          <p class="text-5xl font-semibold text-center">
+            Unleash Creativity, Share
+            <span class="block">Stories, and Build</span>
+          </p>
+
+          <p class="w-full md:w-3/4 text-center text-sm text-gray-600">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatibus quia eveniet, labore maxime deleniti, sit id ab fugit
+            nisi ad blanditiis? Non tempora voluptatum rem debitis doloremque
+            totam quod earum?
+          </p>
+
+          <button
+            type="button"
+            class="flex items-center justify-between gap-4 p-2 rounded-full border border-gray-200 text-nowrap"
+          >
+            Download Jblogs
+            <div
+              class="w-10 h-10 rounded-full flex items-center justify-center bg-orange-500"
+            >
+              <i class="bx bxs-download text-gray-50"></i>
+            </div>
+          </button>
+        </div>
+
+        <div class="px-8 py-12 grid grid-cols-2 md:grid-cols-5 gap-3">
+          <div class="col-span-2 flex flex-col items-start gap-8">
+            <div class="flex items-center justify-center gap-4">
+              <img src="./assets/img/logo.svg" alt="" />
+              <p class="text-3xl font-semibold text-gray-50">JBlogs</p>
+            </div>
+
+            <p class="text-left text-sm text-gray-200">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+              facilis quae ab, harum eius ut quos
+            </p>
+
+            <div class="flex items-center justify-center gap-6">
+              <div
+                class="w-12 h-12 border border-gray-500 rounded-full flex items-center justify-center"
+              >
+                <i class="bx bxl-facebook text-gray-50 text-2xl"></i>
+              </div>
+
+              <div
+                class="w-12 h-12 border border-gray-500 rounded-full flex items-center justify-center"
+              >
+                <i class="bx bxl-whatsapp text-gray-50 text-2xl"></i>
+              </div>
+
+              <div
+                class="w-12 h-12 border border-gray-500 rounded-full flex items-center justify-center"
+              >
+                <i class="bx bxl-instagram text-gray-50 text-2xl"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-4">
+            <p class="text-lg font-semibold text-gray-50">Pages</p>
+            <ul>
+              <li><a href="#" class="text-sm text-gray-500">Home</a></li>
+              <li><a href="#" class="text-sm text-gray-500">About</a></li>
+              <li><a href="#" class="text-sm text-gray-500">Contact</a></li>
+              <li><a href="#" class="text-sm text-gray-500">Services</a></li>
+              <li>
+                <a href="#" class="text-sm text-gray-500">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="space-y-4">
+            <p class="text-lg font-semibold text-gray-50">Support</p>
+            <ul>
+              <li><a href="#" class="text-sm text-gray-500">FAQ's</a></li>
+              <li>
+                <a href="#" class="text-sm text-gray-500">Terms & Conditions</a>
+              </li>
+              <li><a href="#" class="text-sm text-gray-500">Policies</a></li>
+              <li>
+                <a href="#" class="text-sm text-gray-500">Support Teams</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="space-y-4">
+            <p class="text-lg font-semibold text-gray-50">More</p>
+            <ul>
+              <li>
+                <a href="#" class="text-sm text-gray-500">Become a Member</a>
+              </li>
+              <li><a href="#" class="text-sm text-gray-500">Careers</a></li>
+              <li><a href="#" class="text-sm text-gray-500">Events</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

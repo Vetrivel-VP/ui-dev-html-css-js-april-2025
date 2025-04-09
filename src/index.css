@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+body,
+html {
+  height: 100%;
+}
+
+.home-gradient {
+  background-image: linear-gradient(
+      to bottom,
+      #f97316,
+      #f97316,
+      #facc15,
+      #ffffff
+    ),
+    /* top to bottom */
+      linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0.05)
+      ); /* left to right overlay */
+  background-blend-mode: overlay;
+}
